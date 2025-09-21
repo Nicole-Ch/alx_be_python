@@ -3,7 +3,7 @@
 import sys
 
 try:
-    size = int(input("Enter the size of the pattern: ").strip())
+    size = int(input("Enter the size of the pattern:"))
     if size <= 0:
         print("Please enter a positive integer.")
         sys.exit(1)
