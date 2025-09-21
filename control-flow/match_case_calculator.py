@@ -5,9 +5,9 @@ except ValueError:
     print("Invalid number entered. Please enter numeric values.")
     raise SystemExit
 
-op = input("Choose the operation (+, -, *, /): ").strip()
+operation = input("Choose the operation (+, -, *, /): ").strip()
 
-match op:
+match operation:
     case "+":
         result = num1 + num2
         print(f"The result is {result}")
