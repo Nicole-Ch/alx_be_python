@@ -9,9 +9,9 @@ def main():
     shopping_list =[]
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             item = input('Enter the item name to add: ')
             if item:
                 shopping_list.append(item)
@@ -19,7 +19,7 @@ def main():
                 print()
             else:
                 print("No item has been added to the list")  
-        elif choice == '2':
+        elif choice == 2:
             if not shopping_list:
                 print("The is nothing to remove")
                 continue
@@ -32,14 +32,14 @@ def main():
                 print(f"'{item}' has been removed from the shopping list.") 
             else:
                 print(f"Item '{item}' not found in the shopping list.") 
-        elif choice == '3':
+        elif choice == 3:
             if not shopping_list:
                 print("The list is empty")
             else:
                 print("Current List:")
                 for index, value in enumerate(shopping_list):
                     print(f"{index}. {value}")
-        elif choice == '4':
+        elif choice == 4:
             print('Goodbye!')
             break
         else:
